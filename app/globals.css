@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+  font-family: var(--font-inter), "Segoe UI", sans-serif;
+  overflow-x: clip;
+  /* Subtle light-blue sunlight glow across all pages */
+  background-image: radial-gradient(circle at 15% 0%, rgba(56, 189, 248, 0.28), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(99, 102, 241, 0.22), transparent 45%),
+    radial-gradient(circle at 50% 100%, rgba(34, 211, 238, 0.18), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* Prevent wide images / URLs from forcing horizontal scroll */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: #c7d2fe;
+  color: #1e1b4b;
+}

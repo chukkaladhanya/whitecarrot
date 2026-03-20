@@ -1,3 +1,7 @@
+# Demo of product 
+
+video link : https://www.loom.com/share/b7fd32359f6e4e80a754195428879b37
+
 # Careers Page Builder
 
 A small Next.js app where each company gets its own careers site: banner, sections, job posts, and a preview before anything goes live. I built it as an MVP—enough to demo end-to-end without pretending it’s enterprise-ready.

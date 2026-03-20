@@ -42,7 +42,7 @@ In the Supabase SQL editor (or psql), run what’s in `supabase-schema.sql`. Tha
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Production build:
+Production build:
 
 ```bash
 npm run build

@@ -372,7 +372,14 @@ export default function CompanyEditPage({ params }: EditPageProps) {
     setMessage("Publishing...");
     const res = await fetch(`/api/company/${companySlug}`, { method: "POST" });
     if (res.ok) {
-      setMessage("Published successfully.");
+      //setMessage("Published successfully.");
+      //setIsPublishing(false);
+      //return;
+    
+      const { origin, pathname } = window.location;
+      const basePath = pathname.replace(/\/(edit|preview)\/?$/, "");
+      const careersUrl = `${origin}${basePath}/careers`;
+      setMessage(careersUrl);
       setIsPublishing(false);
       return;
     }
